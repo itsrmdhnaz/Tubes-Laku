@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+input[type="number"].quantity::-webkit-outer-spin-button,
+input[type="number"].quantity::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type="number"]#total-price-input {
+    text-align : left;
+    margin: 0;
+    padding: 0;
+}
+
+input[type="number"].quantity {
+    -moz-appearance: textfield;
+    appearance: textfield;
+    text-align: center;
+    width: 50px; /* Ubah lebar input sesuai dengan kebutuhan */
+}
+input:checked + label {
+	border-color: green;
+    color : #42BB73;
+	box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+body {
+    scroll-behavior: smooth;
+}
+
+input:focus {
+    outline: none;
+  }
